@@ -1,4 +1,4 @@
-# NextChat - Plugin de Gestión de Chat para PaperMC
+# 🚀 NextChat - Plugin de Gestión de Chat para PaperMC
 
 ![Java Version](https://img.shields.io/badge/Java-17-blue.svg)
 ![API Version](https://img.shields.io/badge/API-Paper%201.20.4-brightgreen.svg)
@@ -54,27 +54,3 @@
 3.  Reinicia o carga el plugin en tu servidor.
 4.  Configura los archivos `config.yml` y `commands.yml` según tus necesidades. Estos se generarán en la carpeta `plugins/NextChat/` la primera vez que se ejecute el plugin.
 
-## 🔧 Configuración
-
-El plugin utiliza dos archivos principales de configuración:
-
-### `config.yml`
-Controla las configuraciones generales del chat y los mensajes del plugin.
-
-```yaml
-plugin-prefix: "&6Next&fChat"
-
-default-chat-format: "&7%player_name%&f: {message}"
-
-chat-cooldown-seconds: 3
-
-messages:
-  cooldown: "{prefix} &cPor favor espera {time} segundos antes de enviar otro mensaje."
-  no-permission: "{prefix} &cNo tienes permiso para hacer esto."
-  reload: "{prefix} &aConfiguración recargada."
-  command-usage: "{prefix} &7Usa &e/nextchat reload &7para recargar la configuración."
-
-join-quit-messages:
-  enabled: true
-  join-message: "&e%player_name% se ha unido al servidor."
-  quit-message: "&e%player_name% ha abandonado el servidor."
