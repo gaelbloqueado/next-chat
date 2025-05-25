@@ -49,7 +49,7 @@
 
 ## ⚙️ Instalación
 
-1.  Descarga la última versión de `NextChat.jar` desde la [sección de Releases]([https://github.com/TU_USUARIO/TU_REPOSITORIO/releases](https://github.com/gaelbloqueado/next-chat/releases/tag/plugin)).
+1.  Descarga la última versión de `NextChat.jar` desde la [sección de Releases](https://github.com/gaelbloqueado/next-chat/releases).
 2.  Coloca el archivo `NextChat.jar` en la carpeta `plugins` de tu servidor PaperMC.
 3.  Reinicia o carga el plugin en tu servidor.
 4.  Configura los archivos `config.yml` y `commands.yml` según tus necesidades. Estos se generarán en la carpeta `plugins/NextChat/` la primera vez que se ejecute el plugin.
