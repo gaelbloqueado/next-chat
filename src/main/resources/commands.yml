@@ -1,0 +1,41 @@
+# Configuración del bloqueador de comandos de NextChat
+#
+# Define listas blancas de comandos para grupos con permisos.
+# Los jugadores se asignan a un grupo con el permiso "nextchat.group.<nombre_del_grupo>".
+# Si un jugador tiene permisos para varios grupos, se usa el de mayor prioridad.
+#
+# Los comandos dentro de un grupo se incluyen en la lista blanca. Todos los demás comandos se bloquean a menos que el jugador tenga:
+# - El permiso "nextchat.tabcomplete.bypass" (acceso total).
+# - Un permiso "nextchat.group.<comando>" específico para ese comando.
+#
+# 'inherits': Especifica otro grupo del cual heredar comandos. La herencia es aditiva.
+# 'priority': Cuanto mayor sea el número, mayor será la prioridad. Se usa si un jugador coincide con varios grupos.
+# 'commands': Lista de etiquetas de comando (sin '/') permitidas para este grupo. # 'deny-message': Mensaje enviado cuando se bloquea un comando para este grupo.
+
+groups:
+  default:
+    priority: 0
+    commands:
+      - "help"
+      - "msg"
+      - "tell"
+      - "kits"
+      - "spawn"
+      - "tp"
+    deny-message: "&cNo puedes usar este comando."
+
+  vip:
+    priority: 10
+    inherits: "default"
+    commands:
+      - "tpa"
+    deny-message: "&cComando no disponible para tu rango."
+
+  # Añade mas grupos siguiente este formato:
+  # admin:
+  #   priority: 100
+  #   inherits: "vip"
+  #   commands:
+  #     - "gamemode"
+  #     - "kick"
+  #   deny-message: "&cAcción restringida."

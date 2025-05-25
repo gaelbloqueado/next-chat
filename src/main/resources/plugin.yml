@@ -1,0 +1,39 @@
+name: NextChat
+version: ${project.version}
+main: com.gaeldev.nextchat.NextChat
+api-version: '1.20'
+authors: [GaelDev]
+description: Un manejador de chat sencillo con formato, cooldown y bloqueo de comandos.
+softdepend: [PlaceholderAPI]
+
+commands:
+  nextchat:
+    description: Comando principal de NextChat.
+    usage: /<command> [reload]
+    aliases: [nc]
+    permission: nextchat.command
+
+permissions:
+  nextchat.command:
+    description: Permite usar el comando base de NextChat.
+    default: true
+  nextchat.reload:
+    description: Permite recargar la configuración de NextChat.
+    default: op
+  nextchat.bypass.cooldown:
+    description: Permite saltarse el cooldown de chat.
+    default: op
+
+  # Permissions for Command Blocker
+  nextchat.tabcomplete.bypass:
+    description: Permite acceso total a todos los comandos y tab-completion.
+    default: op
+  nextchat.group.default:
+    description: Asigna al grupo 'default' de commands.yml.
+    default: true
+  nextchat.group.vip:
+    description: Asigna al grupo 'vip' de commands.yml.
+    default: false
+  nextchat.color:
+    description: Permite usar códigos de color (&) en los mensajes de chat.
+    default: op

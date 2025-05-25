@@ -1,0 +1,29 @@
+# Configuración principal de NextChat
+#
+# Aqui podras configurar el prefix general, formato de chat general, tiempo de espera en cada
+# mensaje, mensajes especificos de NextChat y mensajes personalizados al entrar y salir del servidor.
+
+# Prefix
+plugin-prefix: "&8[&6Next&fChat&8] "
+
+# Formato de chat por defecto.
+default-chat-format: "&7%player_name%&f: {message}"
+
+# Cooldown en segundos entre mensajes para cada jugador.
+# Pon 0 para desactivar el cooldown. O nextchat.bypass.cooldown
+chat-cooldown-seconds: 3
+
+# Mensajes del plugin
+messages:
+  cooldown: "{prefix} &cPor favor espera {time} segundos antes de enviar otro mensaje."
+  no-permission: "{prefix} &cNo tienes permiso para hacer esto."
+  reload: "{prefix} &aConfiguración recargada."
+  command-usage: "{prefix} &7Usa &e/nextchat reload &7para recargar la configuración."
+
+join-quit-messages:
+  enabled: true
+  join-message: "&e%player_name% se ha unido al servidor."
+  quit-message: "&e%player_name% ha abandonado el servidor."
+  # Si quieres deshabilitar un mensaje por completo (y el de vanilla), déjalo vacío.
+  # Ejemplo para no mostrar mensaje de entrada:
+  # join-message: ""
